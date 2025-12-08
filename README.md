@@ -1,13 +1,13 @@
 # iiot_ids_project
 
-A reproducible experimental framework for evaluating Machine Learning intrusion detection models on Industrial IoT (IIoT) environments using the ToN_IoT Modbus dataset.  
-This repository is part of my research project **“Cyber Threats in IIoT: Can ML Mitigate Vulnerabilities and Prevent Harm?”** for the *Governance della Cybersicurezza* course.
+An experimental framework for evaluating Machine Learning intrusion detection models on Industrial IoT (IIoT) environments using the ToN_IoT Modbus dataset.  
+This repository is part of my research project **“Cyber Threats in IIoT: Can ML Mitigate Vulnerabilities and Prevent Harm?”** for the *Governance della Cybersecurity* course.
 
 ---
 
 ## 1. Overview
 
-The goal of this project is to study how classic ML models behave as **intrusion detection systems (IDS)** in a Modbus-based IIoT setting.
+The goal of this repository is to study how classic ML models behave as **intrusion detection systems (IDS)** in a Modbus-based IIoT setting.
 
 The experiments are organised in **two phases**:
 
@@ -126,7 +126,7 @@ Common steps across both phases:
 
 ---
 
-## 5. Main results (high-level)
+## 5. Main results
 
 ### Phase 1 – Balanced subset (`Train_Test_IoT_Modbus`)
 
@@ -144,13 +144,3 @@ Common steps across both phases:
 - As in Phase 1, metrics are excellent for `normal` and frequent attacks (`backdoor`, `injection`), while recall remains more modest for rare but potentially dangerous classes such as `password`, `scanning`, and `xss`.
 
 This confirms that **tree-based models can be very effective on tabular IIoT telemetry**, but class imbalance and minority threats remain critical challenges from a security-governance perspective.
-
----
-
-## 6. How to run the notebooks
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/GerardoACR/iiot_ids_project.git
-cd iiot_ids_project
